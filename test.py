@@ -26,7 +26,7 @@ if os.path.isfile('molecule.smi'):
 st.title('💊 BCR-ABLpred app')
 st.info('BCR-ABLpred allow users to predict whether a query molecule is active/inactive towards the BCR-ABLpred target protein.')
 
-tab1,tab2,tab3,tab4,tab5,tab6,tab7 = st.tabs(['Main', 'About', 'What is PARP1?', 'Dataset', 'Model performance', 'Python libraries', 'Citing us'])
+tab1,tab2,tab3,tab4,tab5,tab6,tab7 = st.tabs(['Main', 'About', 'What is BCR-ABL?', 'Dataset', 'Model performance', 'Python libraries', 'Citing us'])
 
 
 with tab1:
