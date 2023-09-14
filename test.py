@@ -116,18 +116,18 @@ with tab2:
   coverimage = Image.open('PARP1pred.jpg')
   st.image(coverimage)
 with tab3:
-  st.header('What is PARP1?')
-  st.write('Poly (ADP-ribose) polymerase-1 (PARP-1) is an enzyme that catalyzes the ADP-ribosylation of a specific protein and plays a vital role in DNA repair. It has become an attractive target as inhibition of PARP-1 causes a toxic accumulation of DNA double strand breaks in cancer cells, particularly those with BRCA1/2 deficiency, which are found in breast, ovarian, prostate, and pancreatic cancers.')
+  st.header('What is BCR-ABLpred?')
+  st.write('BCR-ABL is a fusion gene that is formed as a result of the Philadelphia chromosome translocation, a chromosomal abnormality that is commonly seen in chronic myelogenous leukemia (CML). The BCR-ABL fusion gene results from a reciprocal translocation between chromosome 9 and 22, t(9;22)(q34;q11). This translocation brings together the breakpoint cluster region (BCR) gene from chromosome 22 and the Abelson (ABL) gene from chromosome 9 to form the BCR-ABL fusion gene. The protein product of this fusion gene, BCR-ABL protein, has a constitutively active tyrosine kinase that is not regulated by normal cellular control mechanisms. This leads to increased proliferation, reduced apoptosis, and altered adhesion properties of the hematopoietic cells, leading to the development of CML.')
 with tab4:
   st.header('Dataset')
   st.write('''
-    In our work, we retrieved a human PARP-1 biological dataset from the ChEMBL database. The data was curated and resulted in a non-redundant set of 2,018 PARP-1 inhibitors, which can be divided into:
-    - 1,720 active compounds
-    - 298 inactive compounds
+    In our work, we retrieved a human BCR-ABL biological dataset from the ChEMBL database. The data was curated and resulted in a non-redundant set of 404 BCR-ABL inhibitors, which can be divided into:
+    - 198 active compounds
+    - 206 inactive compounds
     ''')
 with tab5:
   st.header('Model performance')
-  st.write('We selected PubChem as a molecular fingerprint and used a random forest with an oversampling approach to construct the best model. The Matthews correlation coefficients for training, cross-validation, and test sets were 1.00, 0.96, and 0.74, respectively.')
+  st.write('We selected Substructure as a molecular fingerprint and used a random forest with an oversampling approach to construct the best model. The Matthews correlation coefficients for training, cross-validation, and test sets were 1.00, 0.96, and 0.74, respectively.')
 with tab6:
   st.header('Python libraries')
   st.markdown('''
@@ -138,5 +138,5 @@ with tab6:
     - `padelpy`
   ''')
 with tab7:
-  st.markdown('T. Lerksuthirat, S. Chitphuk, W. Stitchantrakul, D. Dejsuphong, A.A. Malik, C. Nantasenamat, PARP1PRED: A web server for screening the bioactivity of inhibitors against DNA repair enzyme PARP-1, ***EXCLI Journal*** (2023) DOI: https://doi.org/10.17179/excli2022-5602.')
+  st.markdown('Kuttappan S, Bhowmik R, Gopi Mohan C. Probing the origins of programmed death ligand-1 inhibition by implementing machine learning-assisted sequential virtual screening techniques. Molecular Diversity. 2023 Jul 20:1-8. DOI: https://doi.org/10.1007/s11030-023-10697-5.')
 
